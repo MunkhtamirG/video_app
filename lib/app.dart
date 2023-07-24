@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:video_app/screens/main_screen.dart';
 import 'package:video_app/style/theme.dart' as Style;
 
 class MyApp extends StatefulWidget {
@@ -26,6 +27,7 @@ class _MyAppState extends State<MyApp> {
               selectedItemColor: Style.Colors.mainColor,
               selectedIconTheme: IconThemeData(color: Style.Colors.mainColor),
               unselectedIconTheme: IconThemeData(color: Colors.white))),
+      home: MainScreen(),
     );
   }
 }
