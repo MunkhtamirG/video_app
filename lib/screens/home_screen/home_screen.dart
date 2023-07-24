@@ -87,22 +87,15 @@ class _HomeScreenState extends State<HomeScreen> {
                                     fit: BoxFit.cover,
                                     image: NetworkImage(feeds[index].image))),
                           ),
-                          SizedBox(
-                            width: 5,
-                          ),
-                          Text(
-                            feeds[index].user.name,
-                            style: TextStyle(fontSize: 16, color: Colors.white),
-                          )
+                          SizedBox(width: 5),
+                          Text(feeds[index].user.name,
+                              style:
+                                  TextStyle(fontSize: 16, color: Colors.white))
                         ],
                       ),
-                      SizedBox(
-                        height: 12,
-                      ),
-                      Text(
-                        feeds[index].user.url,
-                        style: TextStyle(color: Colors.white),
-                      )
+                      SizedBox(height: 12),
+                      Text(feeds[index].user.url,
+                          style: TextStyle(color: Colors.white))
                     ],
                   ),
                 ),
@@ -112,32 +105,21 @@ class _HomeScreenState extends State<HomeScreen> {
                 bottom: 50,
                 child: Column(
                   children: [
-                    SizedBox(
-                      height: 20,
-                    ),
+                    SizedBox(height: 20),
                     IconButton(
                         onPressed: () {},
-                        icon: Icon(
-                          Ionicons.heart_outline,
-                          color: Colors.white,
-                          size: 35,
-                        )),
+                        icon: Icon(Ionicons.heart_outline,
+                            color: Colors.white, size: 35)),
                     SizedBox(height: 10),
                     IconButton(
                         onPressed: () {},
-                        icon: Icon(
-                          Ionicons.chatbubble_outline,
-                          color: Colors.white,
-                          size: 30,
-                        )),
+                        icon: Icon(Ionicons.chatbubble_outline,
+                            color: Colors.white, size: 30)),
                     SizedBox(height: 10),
                     IconButton(
                         onPressed: () {},
-                        icon: Icon(
-                          Ionicons.paper_plane_outline,
-                          color: Colors.white,
-                          size: 30,
-                        )),
+                        icon: Icon(Ionicons.paper_plane_outline,
+                            color: Colors.white, size: 30)),
                     SizedBox(height: 10),
                   ],
                 ),
